@@ -2,9 +2,9 @@
 
 给一段人类动作捕捉数据（LAFAN1），还你一个在 200Hz MuJoCo 物理仿真中闭环跑起来的 **29 自由度 Unitree G1 人形机器人控制策略**。
 
-在单张免费 Kaggle Tesla T4（16GB）上，通过 **1 个轻量可微世界模型（朝向归一化 + 半隐式速度增量解析 FK 头 + 软终止头）+ 24 步想象轨迹一阶梯度反传（BPTT）**，仅用 **600 次迭代（10.57 分钟）** 即在 **步行（walk）、奔跑（run）、街舞（dance）、连续跳跃（jumps）、格斗踢拳（fight）、倒地翻滚自主起身（fallAndGetUp）** 6 类全身高动态技能上实现 **6/6 全部存活通过（0 失败，平均归一化回报 0.6984，全身 14 刚体 3D 位置 RMSE 7.31 cm，关节角平均绝对误差 6.55°）**。
+在单张免费 Kaggle Tesla T4（16GB）上，通过 **1 个轻量可微世界模型（朝向归一化 + 半隐式速度增量解析 FK 头 + 软终止头）+ 24 步想象轨迹一阶梯度反传（BPTT）**，仅用 **900 次迭代（14.52 分钟，600 次迭代 9.69 分钟即达零失败）** 即在 **步行（walk）、奔跑（run）、街舞（dance）、连续跳跃（jumps）、格斗踢拳（fight）、倒地翻滚自主起身（fallAndGetUp）** 6 类全身高动态技能上实现 **6/6 全部存活通过（0 失败，平均归一化回报 0.7982，全身 14 刚体 3D 位置 RMSE 5.44 cm，关节角平均绝对误差 5.33°）**。
 
-本仓库是针对 [`embodied-kb`](../embodied-kb/notes/01-认知架构.md) 三层认知架构（「大脑 → 运动皮层 VLA → 小脑全身控制」）中「小脑层（Whole-Body Control）」与「物理状态空间可微世界模型」的实验验证，与 [`mini-vla-pi0`](../mini-vla-pi0-readme/README.md)、[`pi05-libero-sim`](../pi05-libero-sim-local/README.md)、[`rgbd-slam`](../rgbd-slam/README.md) 共享同一套 $\text{SO}(3)/\text{SE}(3)$ 刚体几何与评测规范。
+本仓库是针对 [`embodied-kb`](https://github.com/yimingjiang216-alt/embodied-kb/blob/master/notes/01-%E8%AE%A4%E7%9F%A5%E6%9E%B6%E6%9E%84.md) 三层认知架构（「大脑 → 运动皮层 VLA → 小脑全身控制」）中「小脑层（Whole-Body Control）」与「物理状态空间可微世界模型」的实验验证，与 [`mcp-3dgs`](https://github.com/yimingjiang216-alt/mcp-3dgs)、[`mini-vla-pi0`](https://github.com/yimingjiang216-alt/mini-vla-pi0)、[`pi05-libero-sim`](https://github.com/yimingjiang216-alt/pi05-libero-sim)、[`rgbd-slam`](https://github.com/yimingjiang216-alt/rgbd-slam) 共享同一套 $\text{SO}(3)/\text{SE}(3)$ 刚体几何与评测规范。
 
 ---
 
@@ -223,8 +223,9 @@ python supermimic-g1-sim/generate_local_artifacts.py
 | LAFAN1 G1 Dataset | Harvey et al., SIGGRAPH 2020; Unitree G1 Retargeting (`lvhaidong/LAFAN1_Retargeting_Dataset`) |
 
 ### 本作品集关联仓库
-- [`embodied-kb`](../embodied-kb/README.md)：具身智能 27 篇核心论文精读谱系 + 三层认知架构 + BM25/语义混合检索 MCP 知识库
-- [`mini-vla-pi0`](../mini-vla-pi0-readme/README.md)：$\pi_0$ 架构 2.38M 视觉-语言-动作模型从零实现（Flow Matching + CFG + 像素世界模型闭环）
-- [`pi05-libero-sim`](../pi05-libero-sim-local/README.md) & [`seed-experiment`](../seed-experiment/README.md)：开源 3B pi_{0.5} 机械臂仿真闭环部署与推理种子/指令措辞敏感性定量诊断
-- [`rgbd-slam`](../rgbd-slam/README.md) & [`slam-lidar`](../slam-lidar/README.md)：从零实现视觉/激光 SLAM、手推稀疏解析 Jacobian 局部 BA 与回环退化机理研究
-- [`sfm-push`](../sfm-push/README.md)：TUM 序列 COLMAP SfM 稀疏重建到 3D Gaussian Splatting 新视角合成管线
+- [`mcp-3dgs`](https://github.com/yimingjiang216-alt/mcp-3dgs)：基于 3D Gaussian Splatting 与 FastMCP 的具身空间智能世界模型（开放词汇 3D 定位、VLN 候选视角想象、ESDF 三维路径规划与反事实场景编辑）
+- [`embodied-kb`](https://github.com/yimingjiang216-alt/embodied-kb)：具身智能 28 篇核心论文精读谱系 + 三层认知架构 + BM25/语义混合检索 MCP 知识库
+- [`mini-vla-pi0`](https://github.com/yimingjiang216-alt/mini-vla-pi0)：$\pi_0$ 架构 2.38M 视觉-语言-动作模型从零实现（Flow Matching + CFG + 像素世界模型闭环）
+- [`pi05-libero-sim`](https://github.com/yimingjiang216-alt/pi05-libero-sim) & [`vision-worldmodel-projects`](https://github.com/yimingjiang216-alt/vision-worldmodel-projects)：开源 3B $\pi_{0.5}$ 机械臂仿真闭环部署、动作条件视频世界模型与推理种子/指令措辞敏感性定量诊断
+- [`rgbd-slam`](https://github.com/yimingjiang216-alt/rgbd-slam)：从零实现视觉/激光 SLAM、手推稀疏解析 Jacobian 局部 BA 与回环退化机理研究
+- [`sfm-3dgs-pipeline`](https://github.com/yimingjiang216-alt/sfm-3dgs-pipeline)：TUM 序列 COLMAP SfM 稀疏重建到 3D Gaussian Splatting 新视角合成管线
