@@ -225,6 +225,6 @@ python supermimic-g1-sim/generate_local_artifacts.py
 ### 本作品集关联仓库
 - [`embodied-kb`](../embodied-kb/README.md)：具身智能 27 篇核心论文精读谱系 + 三层认知架构 + BM25/语义混合检索 MCP 知识库
 - [`mini-vla-pi0`](../mini-vla-pi0-readme/README.md)：$\pi_0$ 架构 2.38M 视觉-语言-动作模型从零实现（Flow Matching + CFG + 像素世界模型闭环）
-- [`pi05-libero-sim`](../pi05-libero-sim-local/README.md) & [`seed-experiment`](../seed-experiment/README.md)：开源 3B $\pi_{0.5}$ 机械臂仿真闭环部署与推理种子/指令措辞敏感性定量诊断
+- [`pi05-libero-sim`](../pi05-libero-sim-local/README.md) & [`seed-experiment`](../seed-experiment/README.md)：开源 3B pi_{0.5} 机械臂仿真闭环部署与推理种子/指令措辞敏感性定量诊断
 - [`rgbd-slam`](../rgbd-slam/README.md) & [`slam-lidar`](../slam-lidar/README.md)：从零实现视觉/激光 SLAM、手推稀疏解析 Jacobian 局部 BA 与回环退化机理研究
 - [`sfm-push`](../sfm-push/README.md)：TUM 序列 COLMAP SfM 稀疏重建到 3D Gaussian Splatting 新视角合成管线
