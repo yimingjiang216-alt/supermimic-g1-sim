@@ -1,0 +1,13 @@
+{
+  "id": "yimingjiang666666/scene40-3dgs",
+  "title": "scene40-3dgs",
+  "code_file": "supermimic_g1_sim.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}

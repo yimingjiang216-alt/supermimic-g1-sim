@@ -1,0 +1,56 @@
+[
+  {
+    "file": "walk1_subject1.csv",
+    "skill": "walk",
+    "start_frame_30fps": 3165,
+    "window_frames_30fps": 150,
+    "duration_s": 5.0,
+    "z_min_m": 0.725,
+    "z_max_m": 0.777
+  },
+  {
+    "file": "run1_subject2.csv",
+    "skill": "run",
+    "start_frame_30fps": 2085,
+    "window_frames_30fps": 150,
+    "duration_s": 5.0,
+    "z_min_m": 0.652,
+    "z_max_m": 0.778
+  },
+  {
+    "file": "dance1_subject1.csv",
+    "skill": "dance",
+    "start_frame_30fps": 1275,
+    "window_frames_30fps": 150,
+    "duration_s": 5.0,
+    "z_min_m": 0.712,
+    "z_max_m": 0.825
+  },
+  {
+    "file": "jumps1_subject1.csv",
+    "skill": "jumps",
+    "start_frame_30fps": 1650,
+    "window_frames_30fps": 150,
+    "duration_s": 5.0,
+    "z_min_m": 0.556,
+    "z_max_m": 0.853
+  },
+  {
+    "file": "fight1_subject2.csv",
+    "skill": "fight",
+    "start_frame_30fps": 6645,
+    "window_frames_30fps": 150,
+    "duration_s": 5.0,
+    "z_min_m": 0.642,
+    "z_max_m": 0.872
+  },
+  {
+    "file": "fallAndGetUp1_subject1.csv",
+    "skill": "fallAndGetUp",
+    "start_frame_30fps": 3150,
+    "window_frames_30fps": 150,
+    "duration_s": 5.0,
+    "z_min_m": 0.057,
+    "z_max_m": 0.769
+  }
+]

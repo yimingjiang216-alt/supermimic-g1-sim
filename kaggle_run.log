@@ -1,0 +1,255 @@
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+PyTorch: 2.10.0+cu128 | CUDA available: True
+GPU: Tesla T4 | Capability: (7, 5) | VRAM (GB): 14.56
+$ pip install -q "mujoco==3.11.0" "warp-lang==1.16.0" "mujoco-warp==3.11.0" "mjlab==1.6.1" glfw pyopengl prettytable trimesh mediapy imageio-ffmpeg tensordict tyro docstring-parser shtab typeguard --no-deps
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 232.7/232.7 kB 6.2 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 232.7/232.7 kB 6.2 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.9/18.9 MB 75.2 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.9/18.9 MB 75.2 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 163.1/163.1 MB 12.1 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 78.2 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.2/14.2 MB 90.3 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 163.1/163.1 MB 12.1 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 78.2 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.2/14.2 MB 90.3 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 248.5/248.5 kB 13.8 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 754.2/754.2 kB 33.1 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 876.0/876.0 kB 41.8 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 217.3/217.3 kB 12.9 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 248.5/248.5 kB 13.8 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 754.2/754.2 kB 33.1 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 876.0/876.0 kB 41.8 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 217.3/217.3 kB 12.9 MB/s eta 0:00:00
+$ pip install -q imageio absl-py "etils[epath]" --no-deps
+Stripped @torch.jit.script from /usr/local/lib/python3.12/dist-packages/mjlab/utils/lab_api/math.py
+Patched headless /usr/local/lib/python3.12/dist-packages/mjlab/envs/__init__.py
+MuJoCo version: 3.11.0 | PyTorch still: 2.10.0+cu128
+Downloading 35 Unitree G1 STL link meshes...
+Compiled Unitree G1 MJCF: nq=36, nv=35, nbody=40, mass=33.34 kg
+Prepared walk1_subject1.csv           | start=3165 (105.5s) | z in [0.72, 0.78] m
+Prepared run1_subject2.csv            | start=2085 (69.5s) | z in [0.65, 0.78] m
+Prepared dance1_subject1.csv          | start=1275 (42.5s) | z in [0.71, 0.82] m
+Prepared jumps1_subject1.csv          | start=1650 (55.0s) | z in [0.56, 0.85] m
+Prepared fight1_subject2.csv          | start=6645 (221.5s) | z in [0.64, 0.87] m
+Prepared fallAndGetUp1_subject1.csv   | start=3150 (105.0s) | z in [0.06, 0.79] m
+Cloning into '/kaggle/working/blinkmimic_repo'...
+Cloning into '/kaggle/working/blinkmimic_repo'...
+
+Cloning into '/kaggle/working/blinkmimic_repo'...
+mjlab / MuJoCo-Warp GPU TrackingSim smoke test PASSED!
+Patched blinkmimic/optim.py and train.py successfully.
+Loaded MotionLib: 6 skills (['dance1_subject1', 'fallAndGetUp1_subject1', 'fight1_subject2', 'jumps1_subject1', 'run1_subject2', 'walk1_subject1']), total frames=1794 @ 50Hz (36 1s bins)
+FK Parity vs MuJoCo: {
+  "num_frames_tested": 60,
+  "num_tracked_bodies": 14,
+  "max_pos_error_m": 8.109735167830776e-07,
+  "mean_pos_error_m": 1.0199119756620778e-07,
+  "max_rot_error_rad": 0.0005373087844333436,
+  "mean_rot_error_rad": 4.974287331459206e-05
+}
+[WM Ablation] analytic_semi_implicit   | 8-step body err:   1.01 cm | 16-step body err:   2.26 cm | 8-step NSE: 0.3746
+[WM Ablation] direct_unstructured      | 8-step body err:   1.14 cm | 16-step body err:   2.35 cm | 8-step NSE: 0.3861
+[WM Ablation] no_heading_norm          | 8-step body err:   1.63 cm | 16-step body err:   3.36 cm | 8-step NSE: 0.5534
+>>> Training (A) SuperMimic-Ours on Unitree G1 (mjwarp, envs=1024, iters=600)...
+it 25 | 0.008 h | wm 2.7786 e8 7.0379 | pi -0.940 v 0.0224 imag_r 0.253 surv 0.383 | sim_r 0.347 ep_len 25.8 ep_ret 0.272 term 0.94 | 0.91 it/s
+it 25 | 0.008 h | wm 2.7786 e8 7.0379 | pi -0.940 v 0.0224 imag_r 0.253 surv 0.383 | sim_r 0.347 ep_len 25.8 ep_ret 0.272 term 0.94 | 0.91 it/s
+it 50 | 0.015 h | wm 0.9336 e8 1.8800 | pi -1.326 v 0.0170 imag_r 0.287 surv 0.466 | sim_r 0.326 ep_len 39.9 ep_ret 0.266 term 0.95 | 0.92 it/s
+it 50 | 0.015 h | wm 0.9336 e8 1.8800 | pi -1.326 v 0.0170 imag_r 0.287 surv 0.466 | sim_r 0.326 ep_len 39.9 ep_ret 0.266 term 0.95 | 0.92 it/s
+it 75 | 0.022 h | wm 0.6672 e8 1.3017 | pi -1.303 v 0.0129 imag_r 0.291 surv 0.520 | sim_r 0.315 ep_len 38.4 ep_ret 0.264 term 0.86 | 0.98 it/s
+it 75 | 0.022 h | wm 0.6672 e8 1.3017 | pi -1.303 v 0.0129 imag_r 0.291 surv 0.520 | sim_r 0.315 ep_len 38.4 ep_ret 0.264 term 0.86 | 0.98 it/s
+it 100 | 0.030 h | wm 0.5778 e8 1.1129 | pi -1.379 v 0.0146 imag_r 0.314 surv 0.580 | sim_r 0.336 ep_len 38.6 ep_ret 0.279 term 0.85 | 0.93 it/s
+it 100 | 0.030 h | wm 0.5778 e8 1.1129 | pi -1.379 v 0.0146 imag_r 0.314 surv 0.580 | sim_r 0.336 ep_len 38.6 ep_ret 0.279 term 0.85 | 0.93 it/s
+it 125 | 0.037 h | wm 0.5132 e8 0.9787 | pi -1.496 v 0.0221 imag_r 0.308 surv 0.636 | sim_r 0.296 ep_len 49.7 ep_ret 0.273 term 0.91 | 0.94 it/s
+it 125 | 0.037 h | wm 0.5132 e8 0.9787 | pi -1.496 v 0.0221 imag_r 0.308 surv 0.636 | sim_r 0.296 ep_len 49.7 ep_ret 0.273 term 0.91 | 0.94 it/s
+it 150 | 0.044 h | wm 0.4885 e8 0.9304 | pi -1.626 v 0.0308 imag_r 0.292 surv 0.690 | sim_r 0.257 ep_len 58.1 ep_ret 0.235 term 0.88 | 0.96 it/s
+it 150 | 0.044 h | wm 0.4885 e8 0.9304 | pi -1.626 v 0.0308 imag_r 0.292 surv 0.690 | sim_r 0.257 ep_len 58.1 ep_ret 0.235 term 0.88 | 0.96 it/s
+it 175 | 0.052 h | wm 0.4646 e8 0.8627 | pi -1.878 v 0.0366 imag_r 0.294 surv 0.738 | sim_r 0.259 ep_len 68.4 ep_ret 0.238 term 0.75 | 0.94 it/s
+it 175 | 0.052 h | wm 0.4646 e8 0.8627 | pi -1.878 v 0.0366 imag_r 0.294 surv 0.738 | sim_r 0.259 ep_len 68.4 ep_ret 0.238 term 0.75 | 0.94 it/s
+it 200 | 0.059 h | wm 0.4218 e8 0.7730 | pi -2.128 v 0.0403 imag_r 0.288 surv 0.774 | sim_r 0.264 ep_len 74.6 ep_ret 0.214 term 0.76 | 0.94 it/s
+it 200 | 0.059 h | wm 0.4218 e8 0.7730 | pi -2.128 v 0.0403 imag_r 0.288 surv 0.774 | sim_r 0.264 ep_len 74.6 ep_ret 0.214 term 0.76 | 0.94 it/s
+it 225 | 0.066 h | wm 0.4020 e8 0.7362 | pi -2.407 v 0.0386 imag_r 0.293 surv 0.808 | sim_r 0.274 ep_len 96.2 ep_ret 0.256 term 0.64 | 0.95 it/s
+it 225 | 0.066 h | wm 0.4020 e8 0.7362 | pi -2.407 v 0.0386 imag_r 0.293 surv 0.808 | sim_r 0.274 ep_len 96.2 ep_ret 0.256 term 0.64 | 0.95 it/s
+--lr_decay_ret: deadline --lr_decay_by 250 at it 250: policy LR x3.0 -> x1 over 150 its
+it 250 | 0.074 h | wm 0.3682 e8 0.6656 | pi -2.901 v 0.0398 imag_r 0.305 surv 0.843 | sim_r 0.325 ep_len 117.3 ep_ret 0.232 term 0.51 | 0.95 it/s
+--lr_decay_ret: deadline --lr_decay_by 250 at it 250: policy LR x3.0 -> x1 over 150 its
+it 250 | 0.074 h | wm 0.3682 e8 0.6656 | pi -2.901 v 0.0398 imag_r 0.305 surv 0.843 | sim_r 0.325 ep_len 117.3 ep_ret 0.232 term 0.51 | 0.95 it/s
+it 275 | 0.081 h | wm 0.3455 e8 0.6205 | pi -3.399 v 0.0374 imag_r 0.326 surv 0.875 | sim_r 0.372 ep_len 133.2 ep_ret 0.301 term 0.34 | 0.94 it/s
+it 275 | 0.081 h | wm 0.3455 e8 0.6205 | pi -3.399 v 0.0374 imag_r 0.326 surv 0.875 | sim_r 0.372 ep_len 133.2 ep_ret 0.301 term 0.34 | 0.94 it/s
+it 300 | 0.088 h | wm 0.3159 e8 0.5622 | pi -3.827 v 0.0353 imag_r 0.343 surv 0.885 | sim_r 0.399 ep_len 146.7 ep_ret 0.345 term 0.30 | 0.95 it/s
+it 300 | 0.088 h | wm 0.3159 e8 0.5622 | pi -3.827 v 0.0353 imag_r 0.343 surv 0.885 | sim_r 0.399 ep_len 146.7 ep_ret 0.345 term 0.30 | 0.95 it/s
+it 325 | 0.096 h | wm 0.3024 e8 0.5353 | pi -4.190 v 0.0328 imag_r 0.357 surv 0.899 | sim_r 0.417 ep_len 154.9 ep_ret 0.380 term 0.25 | 0.95 it/s
+it 325 | 0.096 h | wm 0.3024 e8 0.5353 | pi -4.190 v 0.0328 imag_r 0.357 surv 0.899 | sim_r 0.417 ep_len 154.9 ep_ret 0.380 term 0.25 | 0.95 it/s
+it 350 | 0.103 h | wm 0.2880 e8 0.5151 | pi -4.457 v 0.0316 imag_r 0.375 surv 0.913 | sim_r 0.431 ep_len 152.2 ep_ret 0.367 term 0.27 | 0.95 it/s
+it 350 | 0.103 h | wm 0.2880 e8 0.5151 | pi -4.457 v 0.0316 imag_r 0.375 surv 0.913 | sim_r 0.431 ep_len 152.2 ep_ret 0.367 term 0.27 | 0.95 it/s
+it 375 | 0.110 h | wm 0.2851 e8 0.4991 | pi -4.585 v 0.0290 imag_r 0.387 surv 0.921 | sim_r 0.447 ep_len 153.6 ep_ret 0.364 term 0.28 | 0.95 it/s
+it 375 | 0.110 h | wm 0.2851 e8 0.4991 | pi -4.585 v 0.0290 imag_r 0.387 surv 0.921 | sim_r 0.447 ep_len 153.6 ep_ret 0.364 term 0.28 | 0.95 it/s
+it 400 | 0.118 h | wm 0.2842 e8 0.4957 | pi -4.674 v 0.0265 imag_r 0.396 surv 0.926 | sim_r 0.452 ep_len 155.8 ep_ret 0.382 term 0.25 | 0.95 it/s
+it 400 | 0.118 h | wm 0.2842 e8 0.4957 | pi -4.674 v 0.0265 imag_r 0.396 surv 0.926 | sim_r 0.452 ep_len 155.8 ep_ret 0.382 term 0.25 | 0.95 it/s
+it 425 | 0.125 h | wm 0.2822 e8 0.4898 | pi -4.789 v 0.0230 imag_r 0.410 surv 0.936 | sim_r 0.458 ep_len 156.5 ep_ret 0.396 term 0.22 | 0.95 it/s
+it 425 | 0.125 h | wm 0.2822 e8 0.4898 | pi -4.789 v 0.0230 imag_r 0.410 surv 0.936 | sim_r 0.458 ep_len 156.5 ep_ret 0.396 term 0.22 | 0.95 it/s
+it 450 | 0.132 h | wm 0.2896 e8 0.4857 | pi -4.992 v 0.0239 imag_r 0.428 surv 0.943 | sim_r 0.466 ep_len 150.4 ep_ret 0.398 term 0.16 | 0.94 it/s
+it 450 | 0.132 h | wm 0.2896 e8 0.4857 | pi -4.992 v 0.0239 imag_r 0.428 surv 0.943 | sim_r 0.466 ep_len 150.4 ep_ret 0.398 term 0.16 | 0.94 it/s
+it 475 | 0.140 h | wm 0.2740 e8 0.4642 | pi -5.163 v 0.0203 imag_r 0.453 surv 0.954 | sim_r 0.491 ep_len 146.9 ep_ret 0.424 term 0.13 | 0.95 it/s
+it 475 | 0.140 h | wm 0.2740 e8 0.4642 | pi -5.163 v 0.0203 imag_r 0.453 surv 0.954 | sim_r 0.491 ep_len 146.9 ep_ret 0.424 term 0.13 | 0.95 it/s
+it 500 | 0.147 h | wm 0.2795 e8 0.4674 | pi -5.355 v 0.0182 imag_r 0.478 surv 0.963 | sim_r 0.504 ep_len 147.1 ep_ret 0.436 term 0.14 | 0.95 it/s
+it 500 | 0.147 h | wm 0.2795 e8 0.4674 | pi -5.355 v 0.0182 imag_r 0.478 surv 0.963 | sim_r 0.504 ep_len 147.1 ep_ret 0.436 term 0.14 | 0.95 it/s
+it 525 | 0.154 h | wm 0.2794 e8 0.4593 | pi -5.516 v 0.0164 imag_r 0.503 surv 0.968 | sim_r 0.532 ep_len 151.5 ep_ret 0.436 term 0.09 | 0.95 it/s
+it 525 | 0.154 h | wm 0.2794 e8 0.4593 | pi -5.516 v 0.0164 imag_r 0.503 surv 0.968 | sim_r 0.532 ep_len 151.5 ep_ret 0.436 term 0.09 | 0.95 it/s
+it 550 | 0.162 h | wm 0.2579 e8 0.4247 | pi -5.647 v 0.0155 imag_r 0.525 surv 0.976 | sim_r 0.545 ep_len 129.1 ep_ret 0.485 term 0.06 | 0.95 it/s
+it 550 | 0.162 h | wm 0.2579 e8 0.4247 | pi -5.647 v 0.0155 imag_r 0.525 surv 0.976 | sim_r 0.545 ep_len 129.1 ep_ret 0.485 term 0.06 | 0.95 it/s
+it 575 | 0.169 h | wm 0.2400 e8 0.3971 | pi -5.826 v 0.0126 imag_r 0.552 surv 0.981 | sim_r 0.571 ep_len 147.4 ep_ret 0.511 term 0.04 | 0.95 it/s
+it 575 | 0.169 h | wm 0.2400 e8 0.3971 | pi -5.826 v 0.0126 imag_r 0.552 surv 0.981 | sim_r 0.571 ep_len 147.4 ep_ret 0.511 term 0.04 | 0.95 it/s
+it 600 | 0.176 h | wm 0.2279 e8 0.3672 | pi -6.008 v 0.0107 imag_r 0.575 surv 0.986 | sim_r 0.585 ep_len 143.3 ep_ret 0.524 term 0.03 | 0.95 it/s
+it 600 | 0.176 h | wm 0.2279 e8 0.3672 | pi -6.008 v 0.0107 imag_r 0.575 surv 0.986 | sim_r 0.585 ep_len 143.3 ep_ret 0.524 term 0.03 | 0.95 it/s
+SuperMimic-Ours finished in 10.83 min (exit=0)
+>>> Training (B) Vanilla SuperMimic Baseline on Unitree G1...
+it 25 | 0.003 h | wm 2.2169 e8 4.3261 | pi 0.000 v 0.0000 imag_r 0.000 surv 0.000 | sim_r 0.349 ep_len 26.4 ep_ret 0.327 term 0.92 | 2.58 it/s
+it 25 | 0.003 h | wm 2.2169 e8 4.3261 | pi 0.000 v 0.0000 imag_r 0.000 surv 0.000 | sim_r 0.349 ep_len 26.4 ep_ret 0.327 term 0.92 | 2.58 it/s
+it 50 | 0.006 h | wm 0.6535 e8 1.0238 | pi 0.000 v 0.0000 imag_r 0.000 surv 0.000 | sim_r 0.341 ep_len 36.1 ep_ret 0.322 term 0.95 | 2.45 it/s
+it 50 | 0.006 h | wm 0.6535 e8 1.0238 | pi 0.000 v 0.0000 imag_r 0.000 surv 0.000 | sim_r 0.341 ep_len 36.1 ep_ret 0.322 term 0.95 | 2.45 it/s
+it 75 | 0.008 h | wm 0.4585 e8 0.7185 | pi 0.000 v 0.0000 imag_r 0.000 surv 0.000 | sim_r 0.314 ep_len 32.4 ep_ret 0.314 term 0.94 | 2.37 it/s
+it 75 | 0.008 h | wm 0.4585 e8 0.7185 | pi 0.000 v 0.0000 imag_r 0.000 surv 0.000 | sim_r 0.314 ep_len 32.4 ep_ret 0.314 term 0.94 | 2.37 it/s
+policy updates start at iteration 80
+policy updates start at iteration 80
+it 100 | 0.014 h | wm 0.3754 e8 0.5949 | pi -0.657 v 0.0088 imag_r 0.204 surv 0.337 | sim_r 0.304 ep_len 30.4 ep_ret 0.303 term 0.95 | 1.26 it/s
+it 100 | 0.014 h | wm 0.3754 e8 0.5949 | pi -0.657 v 0.0088 imag_r 0.204 surv 0.337 | sim_r 0.304 ep_len 30.4 ep_ret 0.303 term 0.95 | 1.26 it/s
+it 125 | 0.020 h | wm 0.3755 e8 0.6403 | pi -0.647 v 0.0044 imag_r 0.194 surv 0.350 | sim_r 0.262 ep_len 31.6 ep_ret 0.264 term 0.94 | 1.19 it/s
+it 125 | 0.020 h | wm 0.3755 e8 0.6403 | pi -0.647 v 0.0044 imag_r 0.194 surv 0.350 | sim_r 0.262 ep_len 31.6 ep_ret 0.264 term 0.94 | 1.19 it/s
+it 150 | 0.026 h | wm 0.3761 e8 0.6523 | pi -0.632 v 0.0039 imag_r 0.194 surv 0.345 | sim_r 0.288 ep_len 31.5 ep_ret 0.272 term 0.94 | 1.15 it/s
+it 150 | 0.026 h | wm 0.3761 e8 0.6523 | pi -0.632 v 0.0039 imag_r 0.194 surv 0.345 | sim_r 0.288 ep_len 31.5 ep_ret 0.272 term 0.94 | 1.15 it/s
+it 175 | 0.032 h | wm 0.3400 e8 0.5935 | pi -0.643 v 0.0033 imag_r 0.197 surv 0.363 | sim_r 0.296 ep_len 33.1 ep_ret 0.288 term 0.93 | 1.10 it/s
+it 175 | 0.032 h | wm 0.3400 e8 0.5935 | pi -0.643 v 0.0033 imag_r 0.197 surv 0.363 | sim_r 0.296 ep_len 33.1 ep_ret 0.288 term 0.93 | 1.10 it/s
+it 200 | 0.038 h | wm 0.3268 e8 0.5633 | pi -0.641 v 0.0032 imag_r 0.194 surv 0.375 | sim_r 0.294 ep_len 35.3 ep_ret 0.285 term 0.92 | 1.16 it/s
+it 200 | 0.038 h | wm 0.3268 e8 0.5633 | pi -0.641 v 0.0032 imag_r 0.194 surv 0.375 | sim_r 0.294 ep_len 35.3 ep_ret 0.285 term 0.92 | 1.16 it/s
+it 225 | 0.044 h | wm 0.3078 e8 0.5340 | pi -0.650 v 0.0036 imag_r 0.197 surv 0.415 | sim_r 0.293 ep_len 36.0 ep_ret 0.280 term 0.94 | 1.16 it/s
+it 225 | 0.044 h | wm 0.3078 e8 0.5340 | pi -0.650 v 0.0036 imag_r 0.197 surv 0.415 | sim_r 0.293 ep_len 36.0 ep_ret 0.280 term 0.94 | 1.16 it/s
+it 250 | 0.050 h | wm 0.3095 e8 0.5425 | pi -0.694 v 0.0040 imag_r 0.203 surv 0.482 | sim_r 0.280 ep_len 38.3 ep_ret 0.271 term 0.92 | 1.13 it/s
+it 250 | 0.050 h | wm 0.3095 e8 0.5425 | pi -0.694 v 0.0040 imag_r 0.203 surv 0.482 | sim_r 0.280 ep_len 38.3 ep_ret 0.271 term 0.92 | 1.13 it/s
+it 275 | 0.056 h | wm 0.3137 e8 0.5562 | pi -0.726 v 0.0047 imag_r 0.200 surv 0.537 | sim_r 0.266 ep_len 41.7 ep_ret 0.257 term 0.90 | 1.14 it/s
+it 275 | 0.056 h | wm 0.3137 e8 0.5562 | pi -0.726 v 0.0047 imag_r 0.200 surv 0.537 | sim_r 0.266 ep_len 41.7 ep_ret 0.257 term 0.90 | 1.14 it/s
+it 300 | 0.062 h | wm 0.3216 e8 0.5767 | pi -0.708 v 0.0049 imag_r 0.192 surv 0.517 | sim_r 0.257 ep_len 43.1 ep_ret 0.243 term 0.90 | 1.15 it/s
+it 300 | 0.062 h | wm 0.3216 e8 0.5767 | pi -0.708 v 0.0049 imag_r 0.192 surv 0.517 | sim_r 0.257 ep_len 43.1 ep_ret 0.243 term 0.90 | 1.15 it/s
+it 325 | 0.068 h | wm 0.3070 e8 0.5474 | pi -0.725 v 0.0050 imag_r 0.191 surv 0.539 | sim_r 0.255 ep_len 45.3 ep_ret 0.245 term 0.92 | 1.14 it/s
+it 325 | 0.068 h | wm 0.3070 e8 0.5474 | pi -0.725 v 0.0050 imag_r 0.191 surv 0.539 | sim_r 0.255 ep_len 45.3 ep_ret 0.245 term 0.92 | 1.14 it/s
+it 350 | 0.075 h | wm 0.3071 e8 0.5481 | pi -0.765 v 0.0066 imag_r 0.190 surv 0.574 | sim_r 0.238 ep_len 48.7 ep_ret 0.234 term 0.88 | 1.14 it/s
+it 350 | 0.075 h | wm 0.3071 e8 0.5481 | pi -0.765 v 0.0066 imag_r 0.190 surv 0.574 | sim_r 0.238 ep_len 48.7 ep_ret 0.234 term 0.88 | 1.14 it/s
+it 375 | 0.081 h | wm 0.3025 e8 0.5393 | pi -0.797 v 0.0076 imag_r 0.184 surv 0.596 | sim_r 0.230 ep_len 55.2 ep_ret 0.230 term 0.86 | 1.13 it/s
+it 375 | 0.081 h | wm 0.3025 e8 0.5393 | pi -0.797 v 0.0076 imag_r 0.184 surv 0.596 | sim_r 0.230 ep_len 55.2 ep_ret 0.230 term 0.86 | 1.13 it/s
+it 400 | 0.087 h | wm 0.2995 e8 0.5385 | pi -0.816 v 0.0084 imag_r 0.182 surv 0.619 | sim_r 0.226 ep_len 56.9 ep_ret 0.224 term 0.84 | 1.15 it/s
+it 400 | 0.087 h | wm 0.2995 e8 0.5385 | pi -0.816 v 0.0084 imag_r 0.182 surv 0.619 | sim_r 0.226 ep_len 56.9 ep_ret 0.224 term 0.84 | 1.15 it/s
+it 425 | 0.093 h | wm 0.3097 e8 0.5521 | pi -0.792 v 0.0084 imag_r 0.177 surv 0.621 | sim_r 0.214 ep_len 61.5 ep_ret 0.223 term 0.85 | 1.15 it/s
+it 425 | 0.093 h | wm 0.3097 e8 0.5521 | pi -0.792 v 0.0084 imag_r 0.177 surv 0.621 | sim_r 0.214 ep_len 61.5 ep_ret 0.223 term 0.85 | 1.15 it/s
+it 450 | 0.099 h | wm 0.3084 e8 0.5523 | pi -0.807 v 0.0097 imag_r 0.176 surv 0.626 | sim_r 0.211 ep_len 64.7 ep_ret 0.216 term 0.81 | 1.14 it/s
+it 450 | 0.099 h | wm 0.3084 e8 0.5523 | pi -0.807 v 0.0097 imag_r 0.176 surv 0.626 | sim_r 0.211 ep_len 64.7 ep_ret 0.216 term 0.81 | 1.14 it/s
+it 475 | 0.105 h | wm 0.3079 e8 0.5461 | pi -0.879 v 0.0105 imag_r 0.175 surv 0.663 | sim_r 0.198 ep_len 76.2 ep_ret 0.217 term 0.76 | 1.14 it/s
+it 475 | 0.105 h | wm 0.3079 e8 0.5461 | pi -0.879 v 0.0105 imag_r 0.175 surv 0.663 | sim_r 0.198 ep_len 76.2 ep_ret 0.217 term 0.76 | 1.14 it/s
+it 500 | 0.111 h | wm 0.3049 e8 0.5362 | pi -0.964 v 0.0109 imag_r 0.178 surv 0.686 | sim_r 0.189 ep_len 86.3 ep_ret 0.221 term 0.67 | 1.14 it/s
+it 500 | 0.111 h | wm 0.3049 e8 0.5362 | pi -0.964 v 0.0109 imag_r 0.178 surv 0.686 | sim_r 0.189 ep_len 86.3 ep_ret 0.221 term 0.67 | 1.14 it/s
+it 525 | 0.117 h | wm 0.2994 e8 0.5263 | pi -1.027 v 0.0114 imag_r 0.174 surv 0.710 | sim_r 0.194 ep_len 91.9 ep_ret 0.213 term 0.58 | 1.14 it/s
+it 525 | 0.117 h | wm 0.2994 e8 0.5263 | pi -1.027 v 0.0114 imag_r 0.174 surv 0.710 | sim_r 0.194 ep_len 91.9 ep_ret 0.213 term 0.58 | 1.14 it/s
+it 550 | 0.123 h | wm 0.2940 e8 0.5106 | pi -1.147 v 0.0120 imag_r 0.177 surv 0.737 | sim_r 0.191 ep_len 94.4 ep_ret 0.214 term 0.66 | 1.14 it/s
+it 550 | 0.123 h | wm 0.2940 e8 0.5106 | pi -1.147 v 0.0120 imag_r 0.177 surv 0.737 | sim_r 0.191 ep_len 94.4 ep_ret 0.214 term 0.66 | 1.14 it/s
+it 575 | 0.129 h | wm 0.2929 e8 0.5067 | pi -1.229 v 0.0120 imag_r 0.177 surv 0.758 | sim_r 0.195 ep_len 101.6 ep_ret 0.217 term 0.58 | 1.14 it/s
+it 575 | 0.129 h | wm 0.2929 e8 0.5067 | pi -1.229 v 0.0120 imag_r 0.177 surv 0.758 | sim_r 0.195 ep_len 101.6 ep_ret 0.217 term 0.58 | 1.14 it/s
+it 600 | 0.135 h | wm 0.2913 e8 0.4988 | pi -1.325 v 0.0123 imag_r 0.179 surv 0.781 | sim_r 0.200 ep_len 104.9 ep_ret 0.215 term 0.55 | 1.14 it/s
+it 600 | 0.135 h | wm 0.2913 e8 0.4988 | pi -1.325 v 0.0123 imag_r 0.179 surv 0.781 | sim_r 0.200 ep_len 104.9 ep_ret 0.215 term 0.55 | 1.14 it/s
+Vanilla SuperMimic finished in 8.34 min (exit=0)
+[Eval ours   ] it= 100 ( 1.78 min) | return=0.0403 | failed=6/6 | body_pos=18.24cm
+[Eval ours   ] it= 200 ( 3.54 min) | return=0.0547 | failed=6/6 | body_pos=18.53cm
+[Eval ours   ] it= 300 ( 5.30 min) | return=0.1550 | failed=6/6 | body_pos=16.14cm
+[Eval ours   ] it= 400 ( 7.06 min) | return=0.3980 | failed=4/6 | body_pos=13.72cm
+[Eval ours   ] it= 500 ( 8.82 min) | return=0.5902 | failed=1/6 | body_pos=9.34cm
+[Eval ours   ] it= 600 (10.57 min) | return=0.6978 | failed=0/6 | body_pos=7.33cm
+[Eval vanilla] it= 100 ( 0.84 min) | return=0.0343 | failed=6/6 | body_pos=25.50cm
+[Eval vanilla] it= 200 ( 2.29 min) | return=0.0474 | failed=6/6 | body_pos=20.88cm
+[Eval vanilla] it= 300 ( 3.74 min) | return=0.0487 | failed=6/6 | body_pos=21.62cm
+[Eval vanilla] it= 400 ( 5.20 min) | return=0.0641 | failed=6/6 | body_pos=22.56cm
+[Eval vanilla] it= 500 ( 6.66 min) | return=0.1157 | failed=5/6 | body_pos=20.82cm
+[Eval vanilla] it= 600 ( 8.12 min) | return=0.1892 | failed=1/6 | body_pos=19.32cm
+Saved full evaluation summary to results/metrics.json
+Rendered videos/g1_showcase_6skills.mp4 and figs/g1_showcase_6skills.gif
+Rendered videos/g1_comparison_3methods.mp4 and figs/g1_comparison_3methods.gif
+RESULT_BEGIN
+{
+  "fk_parity": {
+    "num_frames_tested": 60,
+    "num_tracked_bodies": 14,
+    "max_pos_error_m": 8.109735167830776e-07,
+    "mean_pos_error_m": 1.0199119756620778e-07,
+    "max_rot_error_rad": 0.0005373087844333436,
+    "mean_rot_error_rad": 4.974287331459206e-05
+  },
+  "wm_step8_cm": {
+    "analytic_semi_implicit": 1.011,
+    "direct_unstructured": 1.141,
+    "no_heading_norm": 1.633
+  },
+  "wm_step16_cm": {
+    "analytic_semi_implicit": 2.258,
+    "direct_unstructured": 2.35,
+    "no_heading_norm": 3.361
+  },
+  "open_loop_pd": {
+    "norm_return": 0.0371,
+    "n_failed": 6,
+    "n_clips": 6,
+    "survival_rate": 0.0951,
+    "body_pos_cm": 18.15,
+    "body_ori_deg": 30.04,
+    "root_pos_cm": 10.57,
+    "joint_deg": 6.46,
+    "slip_cm_s": 14.89,
+    "contact_acc": 0.6118,
+    "pen_mm": 0.211
+  },
+  "vanilla_supermimic": {
+    "norm_return": 0.1891,
+    "n_failed": 1,
+    "n_clips": 6,
+    "survival_rate": 0.8568,
+    "body_pos_cm": 19.33,
+    "body_ori_deg": 52.89,
+    "root_pos_cm": 101.39,
+    "joint_deg": 18.53,
+    "slip_cm_s": 31.18,
+    "contact_acc": 0.6374,
+    "pen_mm": 0.608
+  },
+  "ours_supermimic": {
+    "norm_return": 0.6984,
+    "n_failed": 0,
+    "n_clips": 6,
+    "survival_rate": 1.0,
+    "body_pos_cm": 7.31,
+    "body_ori_deg": 13.62,
+    "root_pos_cm": 39.75,
+    "joint_deg": 6.55,
+    "slip_cm_s": 18.1,
+    "contact_acc": 0.6899,
+    "pen_mm": 0.321
+  },
+  "per_clip_ours": {
+    "dance1_subject1": 0.6921,
+    "fallAndGetUp1_subject1": 0.7233,
+    "fight1_subject2": 0.52,
+    "jumps1_subject1": 0.6779,
+    "run1_subject2": 0.7735,
+    "walk1_subject1": 0.8038
+  }
+}
+RESULT_END
+/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 95368 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Writing 573577 bytes to __results__.html

@@ -1,0 +1,20 @@
+{
+  "fk_parity": {
+    "num_frames_tested": 60,
+    "num_tracked_bodies": 14,
+    "max_pos_error_m": 8.109735167830776e-07,
+    "mean_pos_error_m": 1.0199119756620778e-07,
+    "max_rot_error_rad": 0.0005373087844333436,
+    "mean_rot_error_rad": 4.974287331459206e-05
+  },
+  "wm_step8_cm": {
+    "analytic_semi_implicit": 1.011,
+    "direct_unstructured": 1.141,
+    "no_heading_norm": 1.633
+  },
+  "wm_step16_cm": {
+    "analytic_semi_implicit": 2.258,
+    "direct_unstructured": 2.35,
+    "no_heading_norm": 3.361
+  }
+}
