@@ -2,55 +2,67 @@
   {
     "file": "walk1_subject1.csv",
     "skill": "walk",
+    "desc": "steady walk & turn",
+    "raw_frames_30fps": 7840,
     "start_frame_30fps": 3165,
-    "window_frames_30fps": 150,
-    "duration_s": 5.0,
-    "z_min_m": 0.725,
+    "window_frames_30fps": 180,
+    "duration_s": 6.0,
+    "z_min_m": 0.716,
     "z_max_m": 0.777
   },
   {
     "file": "run1_subject2.csv",
     "skill": "run",
+    "desc": "fast run & agile pivot",
+    "raw_frames_30fps": 7135,
     "start_frame_30fps": 2085,
-    "window_frames_30fps": 150,
-    "duration_s": 5.0,
+    "window_frames_30fps": 180,
+    "duration_s": 6.0,
     "z_min_m": 0.652,
     "z_max_m": 0.778
   },
   {
     "file": "dance1_subject1.csv",
     "skill": "dance",
+    "desc": "rhythmic whole-body street dance",
+    "raw_frames_30fps": 3945,
     "start_frame_30fps": 1275,
-    "window_frames_30fps": 150,
-    "duration_s": 5.0,
+    "window_frames_30fps": 180,
+    "duration_s": 6.0,
     "z_min_m": 0.712,
     "z_max_m": 0.825
   },
   {
     "file": "jumps1_subject1.csv",
     "skill": "jumps",
+    "desc": "continuous two-foot jumps & landing",
+    "raw_frames_30fps": 7334,
     "start_frame_30fps": 1650,
-    "window_frames_30fps": 150,
-    "duration_s": 5.0,
+    "window_frames_30fps": 180,
+    "duration_s": 6.0,
     "z_min_m": 0.556,
     "z_max_m": 0.853
   },
   {
     "file": "fight1_subject2.csv",
     "skill": "fight",
+    "desc": "martial arts kicks & punches",
+    "raw_frames_30fps": 7347,
     "start_frame_30fps": 6645,
-    "window_frames_30fps": 150,
-    "duration_s": 5.0,
+    "window_frames_30fps": 180,
+    "duration_s": 6.0,
     "z_min_m": 0.642,
     "z_max_m": 0.872
   },
   {
     "file": "fallAndGetUp1_subject1.csv",
     "skill": "fallAndGetUp",
+    "desc": "ground fall & autonomous get-up",
+    "raw_frames_30fps": 5047,
     "start_frame_30fps": 3150,
-    "window_frames_30fps": 150,
-    "duration_s": 5.0,
+    "window_frames_30fps": 180,
+    "duration_s": 6.0,
     "z_min_m": 0.057,
-    "z_max_m": 0.769
+    "z_max_m": 0.791
   }
 ]
