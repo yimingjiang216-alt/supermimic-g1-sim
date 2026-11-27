@@ -6,7 +6,6 @@
 
 在单张免费 Kaggle Tesla T4（16GB）上，通过 **1 个轻量可微世界模型（朝向归一化 + 半隐式速度增量解析 FK 头 + 软终止头）+ 24 步想象轨迹一阶梯度反传（BPTT）**，仅用 **900 次迭代（14.52 分钟，600 次迭代 9.69 分钟即达零失败）** 即在 **步行（walk）、奔跑（run）、街舞（dance）、连续跳跃（jumps）、格斗踢拳（fight）、倒地翻滚自主起身（fallAndGetUp）** 6 类全身高动态技能上实现 **6/6 全部存活通过（0 失败，平均归一化回报 0.7982，全身 14 刚体 3D 位置 RMSE 5.44 cm，关节角平均绝对误差 5.33°）**。
 
-本仓库是针对 [`embodied-kb`](https://github.com/yimingjiang216-alt/embodied-kb/blob/master/notes/01-%E8%AE%A4%E7%9F%A5%E6%9E%B6%E6%9E%84.md) 三层认知架构（「大脑 → 运动皮层 VLA → 小脑全身控制」）中「小脑层（Whole-Body Control）」与「物理状态空间可微世界模型」的实验验证，与 [`mcp-3dgs`](https://github.com/yimingjiang216-alt/mcp-3dgs)、[`vla-action-lab`](https://github.com/yimingjiang216-alt/vla-action-lab)、[`rgbd-slam`](https://github.com/yimingjiang216-alt/rgbd-slam) 共享同一套 $\text{SO}(3)/\text{SE}(3)$ 刚体几何与评测规范。
 
 ---
 
